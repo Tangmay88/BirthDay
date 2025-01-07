@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คลิกเพื่อแสดงตัวอักษร</title>
+    <style>
+        .letter {
+            font-size: 50px;
+            font-weight: bold;
+            display: inline-block;
+            margin: 10px;
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+        .gift {
+            cursor: pointer;
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="gift" onclick="showLetters()">🎁</div>
+    <div id="letters"></div>
+
+    <script>
+        let letters = ['A', 'N', 'D', 'A'];
+        let currentLetter = 0;
+
+        function showLetters() {
+            if (currentLetter < letters.length) {
+                let letterElement = document.createElement('div');
+                letterElement.classList.add('letter');
+                letterElement.innerHTML = letters[currentLetter];
+                document.getElementById('letters').appendChild(letterElement);
+
+                setTimeout(() => {
+                    letterElement.style.opacity = 1;
+                }, 50); // Delay before showing each letter
+
+                currentLetter++;
+            }
+        }
+    </script>
+</body>
+</html>

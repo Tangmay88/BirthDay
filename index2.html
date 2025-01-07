@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Floating and Wiggling Image (Left-Right)</title>
+  <style>
+    /* กำหนดภาพให้ลอยและกระดุกกระดิก */
+    .floating-image {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      width: 200px;
+      height: auto;
+      animation: float 3s ease-in-out infinite, wiggle 1s ease-in-out infinite;
+    }
+
+    /* การทำให้ภาพลอยไปทางซ้ายและขวา */
+    @keyframes float {
+      0%, 100% {
+        transform: translateX(0); /* ตำแหน่งเริ่มต้น */
+      }
+      50% {
+        transform: translateX(20px); /* เลื่อนไปทางขวา */
+      }
+    }
+
+    /* การกระดุกกระดิก */
+    @keyframes wiggle {
+      0%, 100% {
+        transform: rotate(0deg); /* เริ่มต้นที่ 0 องศา */
+      }
+      25% {
+        transform: rotate(3deg); /* หมุนไปทางขวา */
+      }
+      75% {
+        transform: rotate(-3deg); /* หมุนไปทางซ้าย */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>ตัวอย่างภาพลอยกระดุกกระดิกซ้ายขวา</h2>
+
+  <!-- รูปลอยและกระดุกกระดิก -->
+  <img src="image.jpg" alt="Floating Image" class="floating-image">
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* Your CSS styles here */
+    .floating {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #1a1a1a;
+    }
+    .music-container {
+      width: 300px;
+      max-height: 200px;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+      color: #fff;
+      font-family: Arial, sans-serif;
+      overflow-y: auto;
+    }
+    .song-info {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .song-avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 5px;
+      object-fit: cover;
+    }
+    .song-details {
+      display: flex;
+      flex-direction: column;
+    }
+    .song-title, .artist-name {
+      margin: 0;
+      font-size: 14px;
+    }
+    .control-buttons {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 15px;
+    }
+    .play-button {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="floating">
+  <audio id="audio" src="images/Uncontrol.mp3"></audio>
+  <div class="music-container">
+    <div class="song-info">
+      <img src="images/Anda6.png" class="song-avatar" alt="Song Avatar" id="songAvatar">
+      <div class="song-details">
+        <p class="song-title">ผมเสียทรง (Uncontrol) Anda</p>
+        <p class="artist-name">No One Else</p>
+      </div>
+    </div>
+    <div class="timer-container">
+      <p class="current-time" id="currentTime">00:00</p>
+      <input type="range" class="progress-bar" id="progressBar" value="0">
+      <p class="total-length" id="totalLength">04:38</p>
+    </div>
+    <div class="control-buttons">
+      <button class="backward" disabled>
+        <i class="fa-solid fa-backward"></i>
+      </button>
+      <button class="play-button" id="playButton">
+        <i class="fa-solid fa-circle-play"></i>
+      </button>
+      <button class="forward" disabled>
+        <i class="fa-solid fa-forward"></i>
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  const audio = document.getElementById('audio');
+  const playButton = document.getElementById('playButton');
+  const progressBar = document.getElementById('progressBar');
+  const currentTimeDisplay = document.getElementById('currentTime');
+  const totalLengthDisplay = document.getElementById('totalLength');
+
+  // Toggle play/pause functionality
+  playButton.addEventListener('click', () => {
+    if (audio.paused) {
+      audio.play();
+      playButton.innerHTML = '<i class="fa-solid fa-circle-pause"></i>';
+    } else {
+      audio.pause();
+      playButton.innerHTML = '<i class="fa-solid fa-circle-play"></i>';
+    }
+  });
+
+  // Update progress bar and current time
+  audio.addEventListener('timeupdate', () => {
+    const currentMinutes = Math.floor(audio.currentTime / 60);
+    const currentSeconds = Math.floor(audio.currentTime % 60);
+    currentTimeDisplay.textContent = `${String(currentMinutes).padStart(2, '0')}:${String(currentSeconds).padStart(2, '0')}`;
+
+    progressBar.value = (audio.currentTime / audio.duration) * 100;
+  });
+
+  // Seek functionality
+  progressBar.addEventListener('input', () => {
+    audio.currentTime = (progressBar.value / 100) * audio.duration;
+  });
+
+  // Display total length when metadata is loaded
+  audio.addEventListener('loadedmetadata', () => {
+    const totalMinutes = Math.floor(audio.duration / 60);
+    const totalSeconds = Math.floor(audio.duration % 60);
+    totalLengthDisplay.textContent = `${String(totalMinutes).padStart(2, '0')}:${String(totalSeconds).padStart(2, '0')}`;
+  });
+</script>
+
+</body>
+</html>
