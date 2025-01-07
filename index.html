@@ -12,7 +12,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Oxer</title>
+  <title>BirthDayPreawa</title>
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css"
@@ -174,11 +174,11 @@
             </div>
             <div style="text-align: -webkit-center;margin-top: 50px;">
 
-              <div id="passwordZone" class="flex flex-col gap-6"
-                style="opacity: 1;transform: none;will-change: transform;width: 300px;/* position: absolute; *//* text-align: center; *//* align-items: center; */">
+              <div class="flex flex-col gap-6"
+                style="opacity: 1;transform: none;will-change: transform;width: 300px; padding-bottom: 20px;">
                 <div class="text-6xl font-extrabold text-[#f78da4]">Memories Zone 📸</div>
                 <div class="text-sm font-extrabold text-[#f78da4]">ใส่ชื่อผู้รับของขวัญ รหัส opens</div>
-                <div  class="otp-container">
+                <div id="passwordZone" class="otp-container">
                   <input type="text" name="pw1" id="pw1" maxlength="1" class="otp-input" onkeyup="changeInputBox(2)">
                   <input type="text" name="pw2" id="pw2" maxlength="1" class="otp-input" onkeyup="changeInputBox(3)">
                   <input type="text" name="pw3" id="pw3" maxlength="1" class="otp-input" onkeyup="changeInputBox(4)">
@@ -186,66 +186,158 @@
                   <input type="text" name="pw5" id="pw5" maxlength="1" class="otp-input" onkeyup="changeInputBox(5)">
                 </div>
 
+                <section class="about_section" id="aa">
+                  <div class="container-fluid">
+                    <div class="swiper mySwiper1">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="images/Anda2.jpg" alt="" style="width: 100%; height: auto;" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/Anda1.jpg" alt="" style="width: 100%; height: auto;" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/Anda3.jpg" alt="" style="width: 100%; height: auto;" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/Anda4.jpg" alt="" style="width: 100%; height: auto;" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/Anda5.jpg" alt="" style="width: 100%; height: auto;" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                  <div style="text-align: -webkit-center;margin-top: 50px;">
+
+                    <div class="flex flex-col gap-6" id="boxMain"
+                      style="opacity: 1;transform: none;will-change: transform;width: 300px; padding-bottom: 400px;">
+                      <div class="text-5xl font-extrabold text-[#f78da4]">เปิดของขวัญได้แล้ว</div>
+                      <div class="floating-image-container" style="text-align: center; margin-bottom: -30px;">
+                        <!-- ปรับ margin-bottom -->
+                        <img id="boxImage1" src="images/gift.gif" alt="Floating Image" class="floating-image"
+                          onclick="clickBoxBirthDay()">
+                        <img id="boxImage2" src="images/birthday.gif" alt="Floating Image" class="floating-image"
+                          onclick="document.getElementById('boxImage1').style.display = 'none';">
+
+
+                      </div>
+
+                    </div>
+                  </div>
+                </section>
+      
+
               </div>
             </div>
 
 
-
-
-
+          </div>
+        </section>
+        <section class="client_section" id="boxImage3" >
+          <div class="container-fluid">
             <div class="row">
-              <div class="col-md-2 offset-md-2">
-
-              </div>
-
-              <div class="col-md-8 mx-auto">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                  <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">01</li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1">02</li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2">03</li>
-                  </ol>
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <div class="box">
-                        <div class="detail-box">
-                          <h1>CongratuLation<br />Anda</h1>
-                          <hr />
-                          <div class="btn-box">
-                            <a href="" class="btn-1">Contact Us</a>
+              <div class="col-md-10 col-lg-8 mx-auto">
+                <div class="client_container">
+                  <div class="heading_container" >
+                    <h2>
+                      What Says Our students
+                    </h2>
+                    <p>
+                      iusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis n
+                    </p>
+                  </div>
+                  <div class="client_box-container">
+                    <div class="carousel-wrap ">
+                      <div class="owl-carousel">
+                        <div class="item">
+                          <div class="box">
+                            <div class="img-box">
+                              <img src="images/client1.png" alt="" />
+                            </div>
+                            <div class="detail-box">
+                              <h4>
+                                Jone Moe
+                              </h4>
+                              <p>
+                                It is a long established fact that a reader will be distracted by the readable content of a
+                                page when looking at its layout. The point of using Lorem Ipsum It is a long established
+                                fact that a reader will be distracted by the readable content of a page when looking at its
+                                layout. The point of using Lorem Ipsum </p>
+                              <img src="images/quote.png" alt="" />
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                      <div class="box">
-                        <div class="detail-box">
-                          <h1>So Proud <br />Of You</h1>
-                          <hr />
-                          <div class="btn-box">
-                            <a href="" class="btn-1">Contact Us</a>
+                        <div class="item">
+                          <div class="box">
+                            <div class="img-box">
+                              <img src="images/client2.png" alt="" />
+                            </div>
+                            <div class="detail-box">
+                              <h4>
+                                Lio Uji
+                              </h4>
+                              <p>
+                                It is a long established fact that a reader will be distracted by the readable content of a
+                                page when looking at its layout. The point of using Lorem Ipsum It is a long established
+                                fact that a reader will be distracted by the readable content of a page when looking at its
+                                layout. The point of using Lorem Ipsum </p>
+                              <img src="images/quote.png" alt="" />
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                      <div class="box">
-                        <div class="detail-box">
-                          <h1>Love <br />You</h1>
-                          <hr />
-                          <div class="btn-box">
-                            <a href="" class="btn-1">Contact Us</a>
+                        <div class="item">
+                          <div class="box">
+                            <div class="img-box">
+                              <img src="images/client1.png" alt="" />
+                            </div>
+                            <div class="detail-box">
+                              <h4>
+                                Jone Moe
+                              </h4>
+                              <p>
+                                It is a long established fact that a reader will be distracted by the readable content of a
+                                page when looking at its layout. The point of using Lorem Ipsum It is a long established
+                                fact that a reader will be distracted by the readable content of a page when looking at its
+                                layout. The point of using Lorem Ipsum </p>
+                              <img src="images/quote.png" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="box">
+                            <div class="img-box">
+                              <img src="images/client2.png" alt="" />
+                            </div>
+                            <div class="detail-box">
+                              <h4>
+                                Lio Uji
+                              </h4>
+                              <p>
+                                It is a long established fact that a reader will be distracted by the readable content of a
+                                page when looking at its layout. The point of using Lorem Ipsum It is a long established
+                                fact that a reader will be distracted by the readable content of a page when looking at its
+                                layout. The point of using Lorem Ipsum </p>
+                              <img src="images/quote.png" alt="" />
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="sr-only">Next</span>
-                  </a>
                 </div>
               </div>
             </div>
@@ -254,51 +346,12 @@
 
 
 
-
-
-
-
         <!-- end slider section -->
       </div>
 
       <!-- about section -->
 
-      <section class="about_section layout_padding" id="aa">
-        <div class="container-fluid">
-          <div class="swiper mySwiper1">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="images/Anda2.jpg" alt="" style="width: 100%; height: auto;" />
-              </div>
-              <div class="swiper-slide">
-                <img src="images/Anda1.jpg" alt="" style="width: 100%; height: auto;" />
-              </div>
-              <div class="swiper-slide">
-                <img src="images/Anda3.jpg" alt="" style="width: 100%; height: auto;" />
-              </div>
-              <div class="swiper-slide">
-                <img src="images/Anda4.jpg" alt="" style="width: 100%; height: auto;" />
-              </div>
-              <div class="swiper-slide">
-                <img src="images/Anda5.jpg" alt="" style="width: 100%; height: auto;" />
-              </div>
-              <div class="swiper-slide">
-                <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-              </div>
-              <div class="swiper-slide">
-                <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-              </div>
-              <div class="swiper-slide">
-                <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-              </div>
-              <div class="swiper-slide">
-                <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </section>
+
     </div>
     <!-- end about section -->
 
@@ -823,24 +876,39 @@
     function changeInputBox(num) {
       document.getElementById("pw" + num).focus();
       if (document.getElementById("pw1").value && document.getElementById("pw2").value && document.getElementById("pw3").value && document.getElementById("pw4").value && document.getElementById("pw5").value) {
-        if (document.getElementById("pw1").value == '1' && document.getElementById("pw2").value == '1' 
-        && document.getElementById("pw3").value == '1' && document.getElementById("pw4").value == '1' 
-        && document.getElementById("pw5").value == '1') {
+        if (document.getElementById("pw1").value == '1' && document.getElementById("pw2").value == '1'
+          && document.getElementById("pw3").value == '1' && document.getElementById("pw4").value == '1'
+          && document.getElementById("pw5").value == '1') {
           alert('Pass');
           document.getElementById("passwordZone").style.display = 'none';
           document.getElementById("aa").style.display = '';
-        }else {
+        } else {
           alert('failk');
-          document.getElementById("pw1").value ='';
-          document.getElementById("pw2").value ='';
-          document.getElementById("pw3").value ='';
-          document.getElementById("pw4").value ='';
-          document.getElementById("pw5").value ='';
+          document.getElementById("pw1").value = '';
+          document.getElementById("pw2").value = '';
+          document.getElementById("pw3").value = '';
+          document.getElementById("pw4").value = '';
+          document.getElementById("pw5").value = '';
           document.getElementById("pw1").focus();
         }
       }
     }
+
+    function clickBoxBirthDay() {
+      document.getElementById('boxImage1').style.display = 'none';
+      document.getElementById('boxImage2').style.display = '';
+      setTimeout(myGreeting, 3000);
+    }
+
+    function myGreeting() {
+      document.getElementById('boxImage3').style.display = '';
+      document.getElementById('boxImage2').style.display = 'none';
+      document.getElementById('boxMain').style.display = 'none';
+    }
+
     document.getElementById("aa").style.display = 'none';
+    document.getElementById('boxImage2').style.display = 'none';
+    document.getElementById("boxImage3").style.display = 'none';
   </script>
 
 
