@@ -9,10 +9,6 @@ body {
   top: 0;
   width: 100%;
   z-index: -1;
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
--webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
 }
 
 @keyframes aurora-gradient {
@@ -1018,8 +1014,28 @@ a:focus {
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */
 
-
 .swiper {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -150px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+
+/*.swiper {
   width: 300px;
   height: 500px;
 }
@@ -1072,7 +1088,7 @@ a:focus {
 
 .swiper-slide:nth-child(10n) {
   background-color: rgb(54, 94, 77);
-} -->
+}*/
 
 /* กำหนดภาพให้ลอยและกระดุกกระดิก */
 
@@ -1651,7 +1667,7 @@ a:focus {
   flex: 0 0 240px;
   width: 300px;
   height: 370px;
-  background-color: #2f3031;
+  background-color: #f6b8ef;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
@@ -1709,102 +1725,4 @@ a:focus {
   text-shadow: rgba(0, 0, 0, 0.5) 0 10px 10px;
 }
 
-/* Photo Spin*/
-#drag-container, #spin-container {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: auto;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transform: rotateX(-10deg);
-          transform: rotateX(-10deg);
-}
 
-#drag-container img, #drag-container video {
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  line-height: 200px;
-  font-size: 50px;
-  text-align: center;
-  -webkit-box-shadow: 0 0 8px #fff;
-          box-shadow: 0 0 8px #fff;
-  -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
-}
-
-#drag-container img:hover, #drag-container video:hover {
-  -webkit-box-shadow: 0 0 15px #fffd;
-          box-shadow: 0 0 15px #fffd;
-  -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0007);
-}
-
-#drag-container p {
-  font-family: Serif;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%) rotateX(90deg);
-          transform: translate(-50%,-50%) rotateX(90deg);
-  color: #fff;
-}
-
-#ground {
-  width: 900px;
-  height: 900px;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%) rotateX(90deg);
-          transform: translate(-50%,-50%) rotateX(90deg);
-  background: -webkit-radial-gradient(center center, farthest-side , #9993, transparent);
-}
-
-#music-container1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-@-webkit-keyframes spin {
-  from{
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
-  } to{
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
-  }
-}
-
-@keyframes spin {
-  from{
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
-  } to{
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
-  }
-}
-@-webkit-keyframes spinRevert {
-  from{
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
-  } to{
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
-  }
-}
-@keyframes spinRevert {
-  from{
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
-  } to{
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
-  }
-}
