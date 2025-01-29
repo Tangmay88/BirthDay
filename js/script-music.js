@@ -18,7 +18,7 @@ new Vue({
       tracks: [
         {
           name: "New Kite",
-          artist: "Anda Anunta",
+          artist: "Anda",
           cover: "./music/img-music/newkite-photo.jpg",
           source: "./music/newkite.m4a",
           url: "https://youtu.be/BvmS1HYFSIU?si=OqmUvm5KZ_nvWN7f",
@@ -26,7 +26,7 @@ new Vue({
         },
         {
           name: "ผมเสียทรง (Uncontrol)",
-          artist: "Anda Anunta",
+          artist: "Anda",
           cover: "./music/img-music/uncontrol-photo.jpg",
           source: "./music/uncontrol.m4a",
           url: "https://youtu.be/356Sks3mC38?si=zpt9u8FNkrNN1lCa",
@@ -34,7 +34,7 @@ new Vue({
         },
         {
           name: "I like me better",
-          artist: "Anda Anunta (Cover)",
+          artist: "Anda (Cover)",
           cover: "./music/img-music/ilikemebetter-photo.jpg",
           source: "./music/ilikemebetter.m4a",
           url: "https://youtu.be/qJOdUI71-20?si=nRpolDlcQHiFeTPm",
@@ -42,7 +42,7 @@ new Vue({
         },
         {
           name: "First Snow",
-          artist: "Anda Anunta (Cover)",
+          artist: "Anda (Cover)",
           cover: "./music/img-music/firstsnow-photo.jpg",
           source: "./music/firstsnow.m4a",
           url: "https://youtu.be/Rdd43douIu4?si=97g69nMLlljMbYVI",
@@ -50,7 +50,7 @@ new Vue({
         },
         {
           name: "กีดกัน 如何",
-          artist: "Anda Anunta (Cover)",
+          artist: "Anda (Cover)",
           cover: "./music/img-music/กีดกัน-photo.jpg",
           source: "./music/กีดกัน.m4a",
           url: "https://youtu.be/kw5j3DgXMxI?si=7vvC6cErlzgttPhk",
@@ -58,7 +58,7 @@ new Vue({
         },
         {
           name: "Unbreakable Love",
-          artist: "Anda Anunta (Cover)",
+          artist: "Anda (Cover)",
           cover: "./music/img-music/unbreakablelove.jpg",
           source: "./music/unbreakablelove.m4a",
           url: "https://youtu.be/eyutkKkNF04?si=xyf0AEwrdKEGBOYB",
@@ -66,7 +66,7 @@ new Vue({
         },
         {
           name: "Candy Cane",
-          artist: "Anda Anunta (Cover)",
+          artist: "Anda (Cover)",
           cover: "./music/img-music/candycane-photo.jpg",
           source: "./music/candycane.m4a",
           url: "https://youtu.be/OAAu-rtVy3Q?si=415VF270ZT5RsMV7",
@@ -74,7 +74,7 @@ new Vue({
         },
         {
           name: "Red Bean",
-          artist: "Anda Anunta (Cover)",
+          artist: "Anda (Cover)",
           cover: "./music/img-music/redbean.jpg",
           source: "./music/redbean.m4a",
           url: "https://youtu.be/hkr1f9Zmwcs?si=A6ToKMthUrB_nZjK",
@@ -82,14 +82,14 @@ new Vue({
         },
         {
           name: "Love Ads",
-          artist: "Anda x Flirt",
+          artist: "AndaxFlirt",
           cover: "./music/img-music/loveads.jpg",
           source: "./music/loveads.m4a",
           url: "https://youtu.be/Pv0tCKskaAM?si=lS8DOOCwR3wFjTIi",
           favorited: true
         },
         {
-          name: "ชอบใช่มะ! (YOU GET LUCKY)",
+          name: "ชอบใช่มะ!(YOU GET LUCKY)",
           artist: "COSMOS",
           cover: "./music/img-music/cosmos.jpg",
           source: "./music/yougetlucky.m4a",
@@ -105,7 +105,7 @@ new Vue({
           favorited: true
         },
         {
-          name: "รักที่แปลว่ารัก (Real Love)",
+          name: "รักที่แปลว่ารัก(Real Love)",
           artist: "Anda Lookkaew",
           cover: "./music/img-music/reallove.jpg",
           source: "./music/reallove.m4a",
@@ -122,7 +122,7 @@ new Vue({
         },
         {
           name: "โลกที่ไม่มีเธอ",
-          artist: "PIN ANDA ATOM Ft. Isbanky (Cover)",
+          artist: "PIN ANDA ATOM Isbanky (Cover)",
           cover: "./music/img-music/โลกที่ไม่มีเธอ.jpg",
           source: "./music/โลกที่ไม่มีเธอ.m4a",
           url: "https://youtu.be/WbiGivnZ9sQ?si=m8uJMh6gKBPQkO-N",
