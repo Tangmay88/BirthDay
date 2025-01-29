@@ -13,8 +13,8 @@ var imgWidth = 120; // width of images (unit: px)
 var imgHeight = 170; // height of images (unit: px)
 
 // Link of background music - set 'null' if you dont want to play background music
-var bgMusicURL = './images/AndaXBirthDay/newkite.mp4';
-var bgMusicControls = true; // Show UI music control
+var bgMusicURL = './images/AndaXBirthDay/newkite.m4a';
+//var bgMusicControls = true;  Show UI music control
 
 /*
      NOTE:
@@ -88,12 +88,12 @@ if (bgMusicURL) {
 // setup events
 document.onpointerdown = function (e) {
   clearInterval(odrag.timer);
-  e = e || window.event;
+
   var sX = e.clientX,
       sY = e.clientY;
 
   this.onpointermove = function (e) {
-    e = e || window.event;
+
     var nX = e.clientX,
         nY = e.clientY;
     desX = nX - sX;
@@ -125,7 +125,7 @@ document.onpointerdown = function (e) {
 };
 
 document.onmousewheel = function(e) {
-  e = e || window.event;
+
   var d = e.wheelDelta / 20 || -e.detail;
   radius += d;
   init(1);
