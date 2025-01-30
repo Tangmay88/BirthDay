@@ -2211,8 +2211,8 @@ a:focus {
 }
 
 /*Card Dinosor*/
-.color1{color:#1BBC9B}/*MOUNTAIN MEADOW*/
-.color2{color:#C0392B/*TALL POPPY*/}
+.color1{color:#30bee9}/*MOUNTAIN MEADOW*/
+.color2{color:#c506b5/*TALL POPPY*/}
 
 
 .card-bd {
@@ -2292,7 +2292,7 @@ a:focus {
 
 .card-bd .details {
 	position: absolute;
-	top: 0;
+	top: -30px;
 	left: 0;
 	box-sizing: border-box;
 	padding: 0 0 0 10px;
@@ -2301,10 +2301,10 @@ a:focus {
 }
 
 .card-bd .details p {
-	font-size: 15px;
+	font-size: 10px;
 	line-height: 5px;
-	transform: rotate(-10deg);
-	padding: 0 0 0 20px;
+	transform: rotate(0deg);
+	padding: -2px 0 0 20px;
 }
 
 .card-bd .details h4 {
@@ -2431,6 +2431,15 @@ a:focus {
   z-index: -1;
 }
 
+.character3 {
+  width: 250px;
+  height: auto;
+  opacity: 0;
+  transition: all 0.5s;
+  position: absolute;
+  z-index: -1;
+}
+
 .card-hover:hover .character {
   opacity: 1;
   transform: translate3d(0%, -30%, 100px);
@@ -2446,7 +2455,13 @@ a:focus {
   transform: translate3d(0%, -30%, 100px);
 }
 
+.card-hover:hover .character3 {
+  opacity: 1;
+  transform: translate3d(0%, -30%, 100px);
+}
+
 /*Button HBD*/
+
 .button-hbd {
   font-size:inherit;
   border-radius:.5em;
@@ -2490,6 +2505,20 @@ h1 {
   color: white;
   text-shadow: 0 0 20px black;
   opacity: 0.8;
+}
+
+#refresh {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #309ae0;
+  transition: transform 0.2s;
+}
+
+#refresh:hover {
+  transform: rotate(90deg);
 }
 
 #glow {
@@ -2708,4 +2737,18 @@ h1 {
 .stripe:nth-child(5) {
   top: 8.7em;
   opacity: 0.6;
+}
+
+/*Card dinosore*/
+
+.details {
+  font-size: 14px;
+}
+
+.details h4 {
+  font-size: 19px;
+}
+
+.details .text-right {
+  font-size: 12px;
 }
