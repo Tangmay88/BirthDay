@@ -10,7 +10,7 @@ $(function() {
         $(this).addClass('puff-bubble');
       });
       $('#glow').remove();
-      txt.hide().html("It <b>will</b> come true..").delay(750).fadeIn(300);
+      txt.hide().html("It <b>will</b> come true..").delay(300).fadeIn(300);
       $('#candle').animate({
         'opacity': '.5'
       }, 100);

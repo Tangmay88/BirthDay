@@ -2473,28 +2473,28 @@ a:focus {
   overflow: hidden;
 }
 
+/*Candle*/
 
-/*Candle */
 
 h1 {
-  /*position: fixed;*/
-  margin: 0 auto;
+  position: fixed;
+  margin: 455px auto;
   bottom: 5%;
   left: 0;
   right: 0;
-  width: 12em;
+  width: 15em;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: 100;
-  font-family: "Mali", sans-serif;
+  font-family: "Sacramento";
   letter-spacing: 0.1em;
   color: white;
   text-shadow: 0 0 20px black;
   opacity: 0.8;
-  margin-top: 275px;
 }
+
 #glow {
-  position: relative;
+  position: absolute;
   left: calc(50% - .1em);
   bottom: calc(35% + 9em);
   width: 0.2em;
@@ -2505,11 +2505,12 @@ h1 {
 
 #candle {
   position: relative;
-  left: calc(10% - 10em);
+  /*left: calc(50% - .75em);*/
   bottom: 35%;
   width: 1.5em;
   height: 10em;
- /* overflow: hidden;*/
+  overflow: hidden;
+  margin-top: 20px;
 }
 #candle::before {
   position: absolute;
