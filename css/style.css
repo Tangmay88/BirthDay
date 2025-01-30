@@ -2478,7 +2478,7 @@ a:focus {
 
 h1 {
   position: absolute;
-  top: 68%; /* กำหนดระยะห่างจากด้านบน */
+  top: 80%; /* กำหนดระยะห่างจากด้านบน */
   left: 50%; /* กำหนดให้อยู่กลางแนวนอน */
   transform: translateX(-50%); /* ปรับให้อยู่ตรงกลางแบบพอดี */
   width: 15em;
@@ -2509,7 +2509,7 @@ h1 {
   width: 1.5em;
   height: 10em;
   overflow: hidden;
-  margin-top: 20px;
+  margin-top: -22px;
 }
 #candle::before {
   position: absolute;
