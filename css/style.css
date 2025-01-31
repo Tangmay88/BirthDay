@@ -5,7 +5,8 @@ body {
   color: #040000;
   animation: aurora-gradient 10s ease infinite;
   /*background: linear-gradient(115deg, hsla(207, 50%, 68%, 0.893), #e9fa0280, rgba(144, 19, 228, 0.51), rgba(75, 236, 139, 0.76), #093be299);*/
-  background: linear-gradient(115deg, hsl(0deg 0% 0% / 97%), #000000, rgb(34 5 86), rgb(5 7 98), #030f3836);
+  background: linear-gradient(115deg, hsla(207, 50%, 68%, 0.893), #1e81bdc7, rgb(21 4 84), rgb(232 236 75), #093be299);
+  /*background: linear-gradient(115deg, hsl(0deg 0% 0% / 97%), #000000, rgb(34 5 86), rgb(5 7 98), #030f3836);*/
   background-size: 300% 300%;
   height: 100%;
   /*min-height: 100vh; */
@@ -1603,10 +1604,10 @@ a:focus {
 
 
 .otp-input {
-  background-color: #ffffff51;
-  border: 2px solid #8dcdf7;
+  background-color: #ffffff8f;
+  border: 2px solid #051475c9;
   border-radius: 40px;
-  color: #1000ec;
+  color: #051475c9;
   font-size: 24px;
   height: 50px;
   outline: none;
@@ -2759,7 +2760,7 @@ h1 {
 /*BG Star*/
 
 
-#stars {
+/*#stars {
   width: 1px;
   height: 1px;
   background: transparent;
@@ -2819,4 +2820,4 @@ h1 {
   to {
     transform: translateY(-2000px);
   }
-}
+}*/
