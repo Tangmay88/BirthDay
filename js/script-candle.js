@@ -17,7 +17,7 @@ $(function() {
     flame.removeClass('puff').addClass('burn');
     $('.smoke').removeClass('puff-bubble');
     $('body').append('<div id="glow"></div>'); // ใส่ glow กลับมา
-    txt.hide().html("Make a wish...").delay(300).fadeIn(300);
+    txt.hide().html("Make a wish.... and blow out the candle").delay(300).fadeIn(300);
     $('#candle').animate({ 'opacity': '1' }, 100);
   });
 });
