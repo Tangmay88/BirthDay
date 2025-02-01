@@ -3,7 +3,7 @@ class AudioController {
         this.bgMusic = new Audio('music/soundgame.mp3');
         this.flipSound = new Audio('https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Audio/flip.wav');
         this.matchSound = new Audio('music/match.mp3');
-        this.victorySound = new Audio('music/victory.mp3');
+        this.victorySound = new Audio('music/victory1.mp3');
         this.gameOverSound = new Audio('music/gameover.mp3');
         /*this.gameOverSound = new Audio('Assets/Audio/gameOver.wav');*/
         this.bgMusic.volume = 0.5;
