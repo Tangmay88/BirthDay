@@ -2821,3 +2821,231 @@ h1 {
     transform: translateY(-2000px);
   }
 }*/
+
+/*Game Card */
+.page-title {
+  color: #7edde7;
+  font-family: "Mali", cursive;
+  font-weight: normal;
+  text-align: center;
+  font-size: 4em;
+}
+
+.game-info-container {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.game-info {
+  font-family: "Mali", cursive;
+  color: #7edde7;
+  font-size: 2em;
+}
+
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  margin: 50px;
+  justify-content: center;
+  perspective: 500px;
+}
+
+.card-game {
+  position: relative;
+  height: 175px;
+  width: 125px;
+}
+
+.card-game:hover {
+  cursor: url("https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Cursors/GhostHover.cur"), auto;
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  border-width: 1px;
+  border-style: solid;
+  transition: transform 500ms ease-in-out;
+}
+
+.card-game.visible .card-back {
+  transform: rotateY(-180deg);
+}
+
+.card-game.visible .card-front {
+  transform: rotateY(0)
+}
+
+.card-game.matched .card-value {
+  animation: dance 1s linear infinite 500ms;
+}
+
+.overlay-text {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: unset;
+  align-items: center;
+  z-index: 100;
+  color: #7edde7;
+  font-family: "Mali", cursive;
+  font-size: 4em !important; /* ปรับขนาดตัวอักษร */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* เพิ่มเงาให้ดูชัดขึ้น */
+}
+
+.overlay-text-small {
+  font-size: .3em;
+}
+
+.overlay-text.visible {
+  width: auto;
+  height: auto;
+  top: 208px;
+  display: flex;
+  flex-direction: column;
+  animation: overlay-grow 500ms forwards;
+}
+
+@keyframes overlay-grow {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 0;
+  }
+  to {
+    background-color: rgba(0, 0, 0, .8);
+    font-size: 10em;
+  }
+}
+
+@keyframes dance {
+  0%, 100%  {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-30deg);
+  }
+  75% {
+    transform: rotate(30deg);
+  }
+}
+
+.card-back {
+  background-color: #0c0249;
+  border-color: #070459;
+}
+
+.card-front {
+  background-color: #dadd9c;
+  border-color: #333;
+  transform: rotateY(180deg);
+}
+
+.card-value {
+  width: 100%;
+  height: auto;
+  transition: transform 100ms ease-in-out;
+  transform: scale(.9);
+}
+
+.card-front:hover .card-value {
+  transform: scale(1);
+}
+
+.cob-web {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  transition: width 100ms ease-in-out, height 100ms ease-in-out;
+}
+
+.cob-web1 {
+  position: absolute;
+  width: 88px;
+  height: 82px;
+  transition: width 100ms ease-in-out, height 100ms ease-in-out;
+}
+
+.card-face:hover .cob-web {
+  width: 60px;
+  height: 60px;
+}
+
+.card-face:hover .cob-web1 {
+  width: 80px;
+  height: 78px;
+}
+
+.cob-web-top-left {
+  transform: rotate(0deg);
+  top: -5px;
+  left: 0;
+}
+
+.cob-web-top-right {
+  top: -8px;
+  right: 0;
+}
+
+.cob-web-bottom-left {
+  transform: rotate(0deg);
+  bottom: -1px;
+  left: 0;
+}
+
+.cob-web-bottom-right {
+  transform: rotate(2deg);
+  bottom: -16px;
+  right: -4px;
+}
+
+.spider {
+  /*align-self: flex-start;*/
+  width: 110px;
+  transform: translateY(4px);
+  transition: transform 100ms ease-in-out;
+}
+
+.card-back:hover .spider {
+  transform: translateY(0)
+}
+
+@media (max-width: 600px) {
+  .game-container {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .game-info-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+#pause-btn {
+  background-color: #0066cc; /* สีฟ้าเข้ม */
+  color: white; /* ข้อความสีขาว */
+  font-size: 16px; /* ขนาดตัวอักษร */
+  padding: 10px 26px; /* เว้นช่องขอบปุ่ม */
+  border: none; /* ไม่มีขอบ */
+  border-radius: 17px; /* มุมโค้ง */
+  cursor: pointer; /* แสดง cursor เป็นมือ */
+  transition: background-color 0.3s ease; /* เปลี่ยนสีเมื่อ hover */
+  position: relative; /* ใช้ position absolute เพื่อจัดปุ่ม */
+  top: 74px; /* ระยะห่างจากด้านบน */
+  right: -84px; /* ระยะห่างจากด้านขวา */
+}
+
+#pause-btn:hover {
+  background-color: #004d99; /* สีฟ้าเข้มขึ้นเมื่อ hover */
+}

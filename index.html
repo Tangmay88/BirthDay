@@ -53,6 +53,9 @@
   <script src="https://public.codepenassets.com/js/prefixfree-1.0.7.min.js"></script>
 <!--BG star-->
 
+<!--Game-->
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'>
+
 
 </head>
 
@@ -405,6 +408,240 @@
                 </div>
               </div>
             </div>
+
+
+            <!--Game-->
+
+            <div class="flex flex-col gap-6" 
+              style="opacity: 1;transform: none;will-change: transform;width: 300px; padding-bottom: 20px; margin: 0 auto;">
+              <div style="text-align: -webkit-center;margin-top: 50px;">
+                <div class="floating-image-container" style="text-align: center;margin-top: -1px;">
+
+                  <img src="images/gif/game.gif" style="width: 370px; height: auto;">
+
+                </div>
+                <div style="text-align: -webkit-center;margin-top: 127px;"></div>
+                <!--<h1 class="page-title">Mix-Or-Match</h1>-->
+  <div class="overlay-text visible">
+    Click to Start
+  </div>
+  <div id="game-over-text" class="overlay-text">
+    GAME OVER
+    <span class="overlay-text-small">Click to Restart</span>
+  </div>
+  <div id="victory-text" class="overlay-text">
+    VICTORY
+    <span class="overlay-text-small">Click to Restart</span>
+  </div>
+  <div class="game-container">
+    <div class="game-info-container">
+      <button id="pause-btn">Pause</button>
+      <div class="game-info" style="margin-left: -150px;">
+        Time <span id="time-remaining">100</span>
+      </div>
+      <div class="game-info" style="margin-left: -165px;">
+        Flips <span id="flips">0</span>
+      </div>
+    </div>
+    <div class="card-game">
+      <div class="card-back card-face">
+        <img class="cob-web cob-web-top-left" src="images/game/fornt/4.png">
+        <img class="cob-web cob-web-top-right" src="images/game/fornt/5.png">
+        <img class="cob-web1 cob-web-bottom-right" src="images/game/fornt/7.png">
+        <img class="spider" src="images/game/fornt/1.png">
+      </div>
+      <div class="card-front card-face">
+
+        <img class="card-value" src="images/game/1_1.jpg">
+      </div>
+    </div>
+    <div class="card-game">
+      <div class="card-back card-face">
+        <img class="cob-web cob-web-top-left" src="images/game/fornt/4.png">
+        <img class="cob-web cob-web-top-right" src="images/game/fornt/5.png">
+        <img class="cob-web1 cob-web-bottom-right" src="images/game/fornt/7.png">
+        <img class="spider" src="images/game/fornt/1.png">
+      </div>
+      <div class="card-front card-face">
+
+        <img class="card-value" src="images/game/1_1.jpg">
+      </div>
+    </div>
+    <div class="card-game">
+      <div class="card-back card-face">
+        <img class="cob-web cob-web-top-left" src="images/game/fornt/4.png">
+        <img class="cob-web cob-web-top-right" src="images/game/fornt/5.png">
+        <img class="cob-web1 cob-web-bottom-right" src="images/game/fornt/7.png">
+        <img class="spider" src="images/game/fornt/1.png">
+      </div>
+      <div class="card-front card-face">
+
+        <img class="card-value" src="images/game/2_1.jpg">
+      </div>
+    </div>
+    <div class="card-game">
+      <div class="card-back card-face">
+        <img class="cob-web cob-web-top-left" src="images/game/fornt/4.png">
+        <img class="cob-web cob-web-top-right" src="images/game/fornt/5.png">
+        <img class="cob-web1 cob-web-bottom-right" src="images/game/fornt/7.png">
+        <img class="spider" src="images/game/fornt/1.png">
+      </div>
+      <div class="card-front card-face">
+
+        <img class="card-value" src="images/game/2_1.jpg">
+      </div>
+    </div>
+    <div class="card-game">
+      <div class="card-back card-face">
+        <img class="cob-web cob-web-top-left" src="images/game/fornt/4.png">
+        <img class="cob-web cob-web-top-right" src="images/game/fornt/5.png">
+        <img class="cob-web1 cob-web-bottom-right" src="images/game/fornt/7.png">
+        <img class="spider" src="images/game/fornt/1.png">
+      </div>
+      <div class="card-front card-face">
+
+        <img class="card-value" src="images/game/3_1.jpg">
+      </div>
+    </div>
+    <div class="card-game">
+      <div class="card-back card-face">
+        <img class="cob-web cob-web-top-left" src="images/game/fornt/4.png">
+        <img class="cob-web cob-web-top-right" src="images/game/fornt/5.png">
+        <img class="cob-web1 cob-web-bottom-right" src="images/game/fornt/7.png">
+        <img class="spider" src="images/game/fornt/1.png">
+      </div>
+      <div class="card-front card-face">
+
+        <img class="card-value" src="images/game/3_1.jpg">
+      </div>
+    </div>
+    <div class="card-game">
+      <div class="card-back card-face">
+        <img class="cob-web cob-web-top-left" src="images/game/fornt/4.png">
+        <img class="cob-web cob-web-top-right" src="images/game/fornt/5.png">
+        <img class="cob-web1 cob-web-bottom-right" src="images/game/fornt/7.png">
+        <img class="spider" src="images/game/fornt/1.png">
+      </div>
+      <div class="card-front card-face">
+
+        <img class="card-value" src="images/game/4_1.jpg">
+      </div>
+    </div>
+    <div class="card-game">
+      <div class="card-back card-face">
+        <img class="cob-web cob-web-top-left" src="images/game/fornt/4.png">
+        <img class="cob-web cob-web-top-right" src="images/game/fornt/5.png">
+        <img class="cob-web1 cob-web-bottom-right" src="images/game/fornt/7.png">
+        <img class="spider" src="images/game/fornt/1.png">
+      </div>
+      <div class="card-front card-face">
+
+        <img class="card-value" src="images/game/4_1.jpg">
+      </div>
+    </div>
+    <div class="card-game">
+      <div class="card-back card-face">
+        <img class="cob-web cob-web-top-left" src="images/game/fornt/4.png">
+        <img class="cob-web cob-web-top-right" src="images/game/fornt/5.png">
+        <img class="cob-web1 cob-web-bottom-right" src="images/game/fornt/7.png">
+        <img class="spider" src="images/game/fornt/1.png">
+      </div>
+      <div class="card-front card-face">
+
+        <img class="card-value" src="images/game/5_1.jpg">
+      </div>
+    </div>
+    <div class="card-game">
+      <div class="card-back card-face">
+        <img class="cob-web cob-web-top-left" src="images/game/fornt/4.png">
+        <img class="cob-web cob-web-top-right" src="images/game/fornt/5.png">
+        <img class="cob-web1 cob-web-bottom-right" src="images/game/fornt/7.png">
+        <img class="spider" src="images/game/fornt/1.png">
+      </div>
+      <div class="card-front card-face">
+
+        <img class="card-value" src="images/game/5_1.jpg">
+      </div>
+    </div>
+    <div class="card-game">
+      <div class="card-back card-face">
+        <img class="cob-web cob-web-top-left" src="images/game/fornt/4.png">
+        <img class="cob-web cob-web-top-right" src="images/game/fornt/5.png">
+        <img class="cob-web1 cob-web-bottom-right" src="images/game/fornt/7.png">
+        <img class="spider" src="images/game/fornt/1.png">
+      </div>
+      <div class="card-front card-face">
+
+        <img class="card-value" src="images/game/6_1.jpg">
+      </div>
+    </div>
+    <div class="card-game">
+      <div class="card-back card-face">
+        <img class="cob-web cob-web-top-left" src="images/game/fornt/4.png">
+        <img class="cob-web cob-web-top-right" src="images/game/fornt/5.png">
+        <img class="cob-web1 cob-web-bottom-right" src="images/game/fornt/7.png">
+        <img class="spider" src="images/game/fornt/1.png">
+      </div>
+      <div class="card-front card-face">
+       
+        <img class="card-value" src="images/game/6_1.jpg">
+      </div>
+    </div>
+    <div class="card-game">
+      <div class="card-back card-face">
+        <img class="cob-web cob-web-top-left" src="images/game/fornt/4.png">
+        <img class="cob-web cob-web-top-right" src="images/game/fornt/5.png">
+        <img class="cob-web1 cob-web-bottom-right" src="images/game/fornt/7.png">
+        <img class="spider" src="images/game/fornt/1.png">
+      </div>
+      <div class="card-front card-face">
+
+        <img class="card-value" src="images/game/7_1.jpg">
+      </div>
+    </div>
+    <div class="card-game">
+      <div class="card-back card-face">
+        <img class="cob-web cob-web-top-left" src="images/game/fornt/4.png">
+        <img class="cob-web cob-web-top-right" src="images/game/fornt/5.png">
+        <img class="cob-web1 cob-web-bottom-right" src="images/game/fornt/7.png">
+        <img class="spider" src="images/game/fornt/1.png">
+      </div>
+      <div class="card-front card-face">
+
+        <img class="card-value" src="images/game/7_1.jpg">
+      </div>
+    </div>
+    <div class="card-game">
+      <div class="card-back card-face">
+        <img class="cob-web cob-web-top-left" src="images/game/fornt/4.png">
+        <img class="cob-web cob-web-top-right" src="images/game/fornt/5.png">
+        <img class="cob-web1 cob-web-bottom-right" src="images/game/fornt/7.png">
+        <img class="spider" src="images/game/fornt/1.png">
+      </div>
+      <div class="card-front card-face">
+
+        <img class="card-value" src="images/game/8_1.jpg">
+      </div>
+    </div>
+    <div class="card-game">
+      <div class="card-back card-face">
+        <img class="cob-web cob-web-top-left" src="images/game/fornt/4.png">
+        <img class="cob-web cob-web-top-right" src="images/game/fornt/5.png">
+        <img class="cob-web1 cob-web-bottom-right" src="images/game/fornt/7.png">
+        <img class="spider" src="images/game/fornt/1.png">
+      </div>
+      <div class="card-front card-face">
+
+        <img class="card-value" src="images/game/8_1.jpg">
+      </div>
+    </div>
+    </div>
+
+  </div>
+
+                </div>
+
+
 
             <div class="flex flex-col gap-6" id="pass"
               style="opacity: 1;transform: none;will-change: transform;width: 300px; padding-bottom: 20px; margin: 0 auto;">
@@ -906,6 +1143,8 @@
       document.getElementById("aa").style.display = 'none';
       document.getElementById('boxImage2').style.display = 'none';
       document.getElementById("boxImage3").style.display = 'none';
+
+
     </script>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js"></script>
@@ -926,6 +1165,9 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
   <script  src="js/script-candle.js"></script>
 <!-- BG star -->
+
+<!--Game-->
+<script  src="js/script-game.js"></script>
 
 
 
