@@ -2924,7 +2924,7 @@ h1 {
     font-size: 0;
   }
   to {
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgb(7 57 98 / 51%);
     font-size: 10em;
   }
 }
