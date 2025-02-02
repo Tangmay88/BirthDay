@@ -10,6 +10,7 @@ class AudioController {
         this.bgMusic.loop = true;
     }
     startMusic() {
+        this.gameOverSound.pause();
         this.bgMusic.play();
     }
     stopMusic() {

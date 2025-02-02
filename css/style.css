@@ -2947,9 +2947,13 @@ h1 {
 }
 
 .card-front {
+  position: relative;
   background-color: #dadd9c;
   border-color: #333;
   transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-value {
@@ -2957,6 +2961,9 @@ h1 {
   height: auto;
   transition: transform 100ms ease-in-out;
   transform: scale(.9);
+  display: block;
+  position: relative; /* ทำให้แน่ใจว่าภาพนี้อยู่เป็นพื้นหลัง */
+  z-index: 1; /* กำหนดให้อยู่ข้างล่าง */
 }
 
 .card-front:hover .card-value {
@@ -2968,6 +2975,8 @@ h1 {
   width: 65px;
   height: 65px;
   transition: width 100ms ease-in-out, height 100ms ease-in-out;
+  z-index: 2; /* ทำให้รูปแมงมุมอยู่ด้านบน */
+  pointer-events: none; /* ป้องกันการคลิกติดรูปนี้ */
 }
 
 .cob-web1 {
@@ -2975,6 +2984,8 @@ h1 {
   width: 88px;
   height: 82px;
   transition: width 100ms ease-in-out, height 100ms ease-in-out;
+  z-index: 2; /* ทำให้รูปแมงมุมอยู่ด้านบน */
+  pointer-events: none; /* ป้องกันการคลิกติดรูปนี้ */
 }
 
 .card-face:hover .cob-web {
@@ -3007,6 +3018,12 @@ h1 {
 .cob-web-bottom-right {
   transform: rotate(2deg);
   bottom: -16px;
+  right: -4px;
+}
+
+.cob-web-bottom-right1 {
+  transform: rotate(2deg);
+  bottom: -2px;
   right: -4px;
 }
 
